@@ -1,0 +1,10 @@
+<h1>タスク編集ページ</h1>
+
+<%= form_for(@tasklist) do |f| %>
+  <%= f.label :content, 'タスク' %>
+  <%= f.text_field :content %>
+
+  <%= f.submit '編集' %>
+<% end %>
+
+<%= link_to '投稿画面へ戻る' , root_path %>
